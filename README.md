@@ -21,6 +21,9 @@ Using Gulp we can watch for changes to our global variables and component styles
 - `gulp styles` to compile your css file (the example project already has a compiled site.css file), and then
 - `gulp watch` to watch your sass files for changes and re-compile
 
+- to see it in action, try changing either the global color variable in "_colors.scss", or the component-level color variable in "example.scss"
+- Go forth and create!
+
 ### Longer
 
 We need to use Gulp and some helpers that allow us to properly structure our sass to be interpreted. The assumption is that we'll want a set of global variables, like colors and type, as well as per-component styles, which will live in the component's folders.
