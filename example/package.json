@@ -4,7 +4,7 @@
   "dependencies": {
     "@frctl/fractal": "^1.1.5",
     "@frctl/mandelbrot": "^1.2.0",
-    "browsersync": "0.0.1-security"
+    "browser-sync": "^2.18.13"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
