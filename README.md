@@ -33,7 +33,7 @@ In our import file, with the help of gulp-sass-glob, we can add any scss file in
 
 In our Gulpfile, we have a task `gulp styles` that will compile all the sass files referenced in import.scss
 
-We'll export this to public/stylesheets/site.css. Now that we have a live-updating compiled css file, we can reference it in our global preview file in our root "example" directory. As you can see, our single variable in colors.scss has been referenced correctly by our example.scss file (our local component style).
+We'll export this to public/stylesheets/site.css. Now that we have a live-updating compiled css file, we can reference it in our global preview file in our component directory. As you can see, our single variable in colors.scss has been referenced correctly by our example.scss file (our local component style).
 
 
 Now, this is what we are looking for but we probably want it to update on any change to any scss file. Since Fractal already uses browsersync, we'll just wrap a Gulp task. So, after starting your Fractal app with `fractal start --sync`, you can run `gulp watch`, and live-update sass!
