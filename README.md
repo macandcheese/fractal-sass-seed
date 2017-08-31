@@ -15,6 +15,7 @@ Using Gulp we can watch for changes to our global variables and component styles
 ### tl;dr
 
 - clone this repository
+- cd into the "example" folder
 - `npm install` to install dependencies
 - `fractal start --sync` to start the Fractal instance with Browsersync
 - `gulp styles` to compile your css file, and then
