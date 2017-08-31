@@ -20,7 +20,6 @@ Using Gulp we can watch for changes to our global variables and component styles
 - `fractal start --sync` to start the Fractal instance with Browsersync
 - `gulp styles` to compile your css file (the example project already has a compiled site.css file), and then
 - `gulp watch` to watch your sass files for changes and re-compile
-
 - to see it in action, try changing either the global color variable in "_colors.scss", or the component-level color variable in "example.scss"
 - Go forth and create!
 
