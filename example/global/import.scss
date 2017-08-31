@@ -1,0 +1,6 @@
+// import the basics
+@import "colors";
+@import "normalize";
+// specify inputs here to ensure variables are imported beforehand
+// relies on npm sass globbing
+@import "../components/**/*.scss";
