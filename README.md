@@ -2,13 +2,7 @@
 
 This is a seed project, using [Fractal](https://github.com/frctl/fractal) alongside Sass and Gulp to provide editable component-based CSS
 
-## Problem
-
-Fractal is a great tool for documenting and managing component libraries, but without the ability to easily reference global variables alongside component styling, managing "live" sass is cumbersome.
-
-## Solution
-
-Using Gulp we can watch for changes to our global variables and component styles to auto-compile and update our pattern SASS. We can then use this auto compiled output css to power our Fractal preview , and use one single set of files to both manage and display components
+Using Gulp we can watch for changes to our global variables and component styles to auto-compile and update our pattern SASS. We can then use this auto compiled output css to power our Fractal preview, and use one single set of files to both manage and display components.
 
 ## Use
 
@@ -34,14 +28,9 @@ In our Gulpfile, we'll watch this import file as well as our component folder fo
 
 In our import file, with the help of gulp-sass-glob, we can add any scss file inside any component folder, and append it to our import.scss file. That's the `@import "../components/**/*.scss` line at the bottom of import.scss
 
-In our Gulpfile, we have a task `gulp styles` that will compile all the sass files referenced in import.scss
-
-We'll export this to public/stylesheets/site.css. Now that we have a live-updating compiled css file, we can reference it in our global preview file in our component directory.
+In our Gulpfile, we have a task `gulp styles` that will compile all the sass files referenced in import.scss We'll export this to public/stylesheets/site.css. Now that we have a live-updating compiled css file, we can reference it in our global preview file in our component directory.
 
 Now, this is what we are looking for but we probably want it to update on any change to any scss file. After starting your Fractal app with `fractal start --sync`, you can run `gulp watch`, and live-update sass!
-
-
-Note - There is a helper to fractal.js to name the assets tab SCSS or CSS based on the availability of the file type. You can remove this if desired to revert to the "Assets" label.
 
 ## Contributing
 
